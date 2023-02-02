@@ -1,0 +1,42 @@
+/* commons */
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    max-width: 1000px;
+    margin: auto;
+    font-family: 'Fredoka', sans-serif;
+    background-color: #1f1b3a;
+    color: aliceblue;
+}
+
+:root
+{
+    --tb-title: #e53170;
+    --tb-bck_card: #0f0e17 ;
+    --tb-mail: #2fa8d5;
+
+}
+
+/* utilities */
+.pt-30{
+    padding-top: 30px;
+}
+
+/* header */
+
+header{
+    text-align: center;
+}
+
+h1{
+    font-weight:600;
+    padding: 30px;
+    color: var(--tb-title);
+}
