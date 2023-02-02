@@ -24,12 +24,19 @@ main>section{
     --tb-title: #e53170;
     --tb-bck_card: #0f0e17 ;
     --tb-mail: #2fa8d5;
+    --tb-card_text: #ffffff;
 
 }
 
 /* utilities */
 .pt-30{
     padding-top: 30px;
+}
+
+section::after{
+    content: "";
+    display: table;
+    clear: both;
 }
 
 /* header */
@@ -69,11 +76,18 @@ div :last-child{
     width: calc(90% / 3);
     margin: calc(10% / 6);
     background-color:var(--tb-bck_card);
-    color: white;
+    color: var(--tb-card_text);
 }
 
 .card img{
     float: left;
     height: 90px;
     padding-right: 10px;
+}
+
+/* footer */
+
+footer p{
+    text-align: right;
+    color: var(--tb-title);
 }
