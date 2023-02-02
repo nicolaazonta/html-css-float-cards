@@ -1,11 +1,16 @@
-/* commons */
-
+/* commons ----------------------*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+:root{
+    --tb-title: #e53170;
+    --tb-bck_card: #0f0e17 ;
+    --tb-mail: #2fa8d5;
+    --tb-card_text: #ffffff;
+}
 
 body{
     max-width: 1000px;
@@ -14,33 +19,15 @@ body{
     background-color: var(white);
 }
 
-main>section{
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
 
-:root
-{
-    --tb-title: #e53170;
-    --tb-bck_card: #0f0e17 ;
-    --tb-mail: #2fa8d5;
-    --tb-card_text: #ffffff;
-
-}
-
-/* utilities */
+/* utilities ---------------------- */
 .pt-30{
     padding-top: 30px;
 }
 
-section::after{
-    content: "";
-    display: table;
-    clear: both;
-}
 
-/* header */
 
+/* header ---------------------- */
 header{
     text-align: center;
 }
@@ -56,7 +43,19 @@ header p{
 }
 
 
-/* main */
+/* main ---------------------- */
+
+
+main>section{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+section::after{ /* -----clearfix----- */
+    content: "";
+    display: table;
+    clear: both;
+}
 
 h3{
     margin-top: 10px;
@@ -85,7 +84,7 @@ div :last-child{
     padding-right: 10px;
 }
 
-/* footer */
+/* footer ---------------------- */
 
 footer p{
     text-align: right;
