@@ -1,7 +1,6 @@
 /* commons */
 
-*
-{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,8 +11,12 @@ body{
     max-width: 1000px;
     margin: auto;
     font-family: 'Fredoka', sans-serif;
-    background-color: #1f1b3a;
-    color: aliceblue;
+    background-color: var(white);
+}
+
+main>section{
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 :root
@@ -35,8 +38,42 @@ header{
     text-align: center;
 }
 
-h1{
+header h1{
     font-weight:600;
     padding: 30px;
     color: var(--tb-title);
+}
+
+header p{
+    font-weight: 400;
+}
+
+
+/* main */
+
+h3{
+    margin-top: 10px;
+}
+
+h3, p{
+    font-size: 14px;
+}
+
+div :last-child{
+    color: var(--tb-mail);
+}
+
+.card{
+    line-height: calc(70px / 3);
+    float: left;
+    width: calc(90% / 3);
+    margin: calc(10% / 6);
+    background-color:var(--tb-bck_card);
+    color: white;
+}
+
+.card img{
+    float: left;
+    height: 90px;
+    padding-right: 10px;
 }
