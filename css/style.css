@@ -51,7 +51,9 @@ main>section{
     margin-bottom: 15px;
 }
 
-section::after{ /* -----clearfix----- */
+section::after,
+div::after
+{ /* -----clearfix----- */
     content: "";
     display: table;
     clear: both;
@@ -70,8 +72,8 @@ div :last-child{
 }
 
 .card{
-    line-height: calc(70px / 3);
-    float: left;
+    float: left;    
+    line-height: calc(70px / 3);    
     width: calc(90% / 3);
     margin: calc(10% / 6);
     background-color:var(--tb-bck_card);
