@@ -4,29 +4,22 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 :root{
     --tb-title: #e53170;
     --tb-bck_card: #0f0e17 ;
     --tb-mail: #2fa8d5;
     --tb-card_text: #ffffff;
 }
-
 body{
     max-width: 1000px;
     margin: auto;
     font-family: 'Fredoka', sans-serif;
     background-color: var(white);
 }
-
-
 /* utilities ---------------------- */
 .pt-30{
     padding-top: 30px;
 }
-
-
-
 /* header ---------------------- */
 header{
     text-align: center;
@@ -42,44 +35,35 @@ header p{
     font-weight: 400;
 }
 
-
 /* main ---------------------- */
-
-
 main>section{
     margin-top: 15px;
     margin-bottom: 15px;
 }
-
-section::after,
-div::after
-{ /* -----clearfix----- */
+/* -----clearfix----- */
+.clearfix::after{
     content: "";
     display: table;
     clear: both;
 }
-
 h3{
     margin-top: 10px;
 }
-
 h3, p{
     font-size: 14px;
 }
-
 div :last-child{
     color: var(--tb-mail);
 }
-
 .card{
     float: left;    
     line-height: calc(70px / 3);    
-    width: calc(90% / 3);
-    margin: calc(10% / 6);
+    width: 32%;
+    margin: .4rem;
+    padding: 10px;
     background-color:var(--tb-bck_card);
     color: var(--tb-card_text);
 }
-
 .card img{
     float: left;
     height: 90px;
@@ -87,7 +71,6 @@ div :last-child{
 }
 
 /* footer ---------------------- */
-
 footer p{
     text-align: right;
     color: var(--tb-title);
